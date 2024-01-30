@@ -34,6 +34,7 @@ class CalendarView: UIView {
         collectionView.delegate = self
         collectionView.alwaysBounceVertical = false
         collectionView.isPagingEnabled = true
+        collectionView.scrollsToTop = false
         collectionView.register(CalendarCell.self, forCellWithReuseIdentifier: "CalendarCell")
         return collectionView
     }()
